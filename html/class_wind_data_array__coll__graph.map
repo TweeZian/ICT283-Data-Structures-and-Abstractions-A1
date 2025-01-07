@@ -1,0 +1,9 @@
+<map id="WindDataArray" name="WindDataArray">
+<area shape="rect" id="node1" title=" " alt="" coords="53,1041,248,1309"/>
+<area shape="rect" id="node2" href="$class_vector.html" title=" " alt="" coords="5,681,133,979"/>
+<area shape="rect" id="node3" href="$class_vector.html" title=" " alt="" coords="36,321,164,619"/>
+<area shape="rect" id="node4" href="$class_vector.html" title=" " alt="" coords="157,689,299,971"/>
+<area shape="rect" id="node5" href="$class_wind_data.html" title=" " alt="" coords="219,336,335,604"/>
+<area shape="rect" id="node6" href="$class_time.html" title=" " alt="" coords="172,71,263,193"/>
+<area shape="rect" id="node7" href="$class_date.html" title=" " alt="" coords="287,5,385,259"/>
+</map>

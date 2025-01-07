@@ -1,0 +1,116 @@
+#include "WindDataArray.h"
+
+WindDataArray::WindDataArray()
+{
+
+}
+
+void WindDataArray::Add(WindData &element)
+{
+    m_array.Add(element);
+}
+
+void WindDataArray::Get(WindData &element, int index)
+{
+    element = m_array.At(index);
+}
+
+int WindDataArray::Size()
+{
+    return m_array.Size();
+}
+
+bool WindDataArray::ReadInputFileToStorage(const string &fileName)
+{
+    ifstream infile(fileName);
+    if( !infile ) return false;
+
+    string line;
+    infile >> line;
+    while(getline(infile,line))
+    {
+        WindData wd;
+        istringstream iss(line);
+        string token;
+        int currentColumn = 0;
+
+        while(getline(iss,token,','))
+        {
+            //istringstream toStore(token);
+            //StoreDateAndTime(wd,iss,currentColumn);
+            StoreAirTemp(wd,token,currentColumn);
+            cout << token  << "===" << currentColumn << endl;
+
+            currentColumn++;
+        }
+
+        m_array.Add(wd);
+
+
+
+
+        /*
+                StoreDateAndTime(wd,infile);
+                StoreAirTemp(wd,infile);
+                RunStream(9,infile);
+                StoreSpeed(wd,infile);
+                StoreSolarRad(wd,infile);
+
+                m_array.Add(wd);
+                infile >> line;
+
+                */
+    }
+    infile.close();
+    return true;
+}
+
+void WindDataArray::RunStream(int index, ifstream &infile)
+{
+    string line;
+    for(int i = 0; i < index; i++)
+    {
+        getline(infile,line,',');
+    }
+}
+
+void WindDataArray::StoreDateAndTime(WindData &wd, istringstream &infile, int currentColumn)
+{
+    int column = 0;
+    if(currentColumn == column)
+    {
+        Date d;
+        Time t;
+        infile >> d >> t;
+        wd.SetDate(d);
+        wd.SetTime(t);
+    }
+
+}
+
+void WindDataArray::StoreAirTemp(WindData &wd, string line, int currentColumn)
+{
+    int column = 1;
+    if(currentColumn == column)
+    {
+        wd.SetAirTemp(stof(line));
+        cout << "asdhjasgfujhsdgfhjsdafghjksdgfhjsdag" << endl;
+    }
+
+}
+
+void WindDataArray::StoreSpeed(WindData &wd, ifstream &infile)
+{
+    string line;
+    getline(infile,line,',');
+    wd.SetSpeed(stof(line));
+}
+
+void WindDataArray::StoreSolarRad(WindData &wd, ifstream &infile)
+{
+    string line;
+    getline(infile,line,',');
+    wd.SetSolarRad(stoi(line));
+}
+
+

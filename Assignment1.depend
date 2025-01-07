@@ -1,0 +1,99 @@
+# depslib dependency file v1.0
+1687922858 source:d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddata.cpp
+	"WindData.h"
+
+1687942101 d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddata.h
+	"Date.h"
+	"Time.h"
+
+1687952216 d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\date.h
+	<iostream>
+	<string>
+	<sstream>
+
+1687923030 d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\time.h
+	<iostream>
+	<string>
+
+1687952225 source:d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\date.cpp
+	"Date.h"
+
+1687668133 source:d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\time.cpp
+	"Time.h"
+
+1687831318 source:d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddatetest.cpp
+	"WindData.h"
+	<iostream>
+
+1687946946 source:d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddataarray.cpp
+	"WindDataArray.h"
+
+1687942088 d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddataarray.h
+	<fstream>
+	<cmath>
+	<string>
+	<sstream>
+	"WindData.h"
+	"Vector.h"
+
+1687961690 d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\vector.h
+
+1687955759 source:d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddataarraytest.cpp
+	"WindDataArray.h"
+
+1687668133 source:c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\time.cpp
+	"Time.h"
+
+1687614654 c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\time.h
+	<iostream>
+	<string>
+
+1687831158 source:c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddata.cpp
+	"WindData.h"
+
+1687697849 c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddata.h
+	"Date.h"
+	"Time.h"
+
+1687861507 c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\date.h
+	<iostream>
+	<string>
+	<sstream>
+
+1687850068 source:c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddataarray.cpp
+	"WindDataArray.h"
+
+1687850386 c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddataarray.h
+	<fstream>
+	<cmath>
+	<string>
+	<sstream>
+	"WindData.h"
+	"Vector.h"
+
+1687595543 c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\vector.h
+
+1687834259 source:c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\winddataarraytest.cpp
+	"WindDataArray.h"
+
+1687861613 source:c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\date.cpp
+	"Date.h"
+
+1690634993 source:d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\main.cpp
+	<iostream>
+	<fstream>
+	"WindDataArray.h"
+
+1687849627 source:c:\users\rexfe\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\main.cpp
+	<iostream>
+	<fstream>
+	"WindDataArray.h"
+
+1687950908 source:d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\datetest.cpp
+	"Date.h"
+
+1687961707 source:d:\dropbox\kaplan\lessons\ict283 data structures and abstractions\assignment 1\assignment1\vectortest.cpp
+	<iostream>
+	<string>
+	"Vector.h"
+

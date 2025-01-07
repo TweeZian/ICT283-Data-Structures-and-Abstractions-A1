@@ -1,0 +1,165 @@
+#include <iostream>
+#include <fstream>
+#include "WindDataArray.h"
+
+using namespace std;
+
+const string DATA_SOURCE = "data/testsample_source.txt";
+
+void StoreDataToArray(WindDataArray &wd);
+int GetChoice();
+int GetMonthChoice();
+int GetYearChoice();
+string FindMonthAsString(int monthNum);
+
+void Menu1();
+void Menu2();
+void Menu3();
+void Menu4();
+
+int main()
+{
+
+    WindDataArray wda;
+    StoreDataToArray(wda);
+    int choice;
+    do
+    {
+        choice = GetChoice();
+        switch(choice)
+        {
+        case 1:
+            Menu1();
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            cout << "Program will now exit." << endl;
+            break;
+        default:
+            cout << "Invalid choice, please reenter." << endl << endl;
+        }
+    }
+    while(choice != 5);
+
+    return 0;
+}
+
+void StoreDataToArray(WindDataArray &wda)
+{
+    ifstream sourceFile(DATA_SOURCE);
+    string line;
+
+    //read source file to find csv file
+    while(getline(sourceFile,line))
+    {
+        //set data folder into line
+        line = "data/" + line;
+        //input data into array for every data file in source txt
+        wda.ReadInputFileToStorage(line);
+    }
+}
+
+int GetChoice()
+{
+    cout << "Menu: " << endl;
+    cout << "1. Display the average wind speed and sample standard deviation for this wind speed given a specified month and year." << endl;
+    cout << "2. Display the average ambient air temperature and sample standard deviation for each month of a specified year." << endl;
+    cout << "3. Display the total solar radiation in kWh/m2 for each month of a specified year." << endl;
+    cout << "4. Print average wind speed(km/h), average ambient air temperature and total solar radiation in kWh/m2 for each month of a specified year to a csv file" << endl;
+    cout << "5. Exit the program." << endl << endl;
+
+    int choice;
+    cout << "Please enter choice: " << endl;
+    cin >> choice;
+    cout << endl;
+    return choice;
+
+}
+
+int GetMonthChoice()
+{
+    int month;
+    do
+    {
+        cout << "Please enter a month as integer (e.g January = 1): " << endl;
+        cin >> month;
+        if(month < 0 || month > 12)
+        {
+            cout << "Invalid choice, please reenter." << endl << endl;
+        }
+    }
+    while(month > 0 && month < 12);
+
+    return month;
+}
+
+int GetYearChoice()
+{
+    int year;
+    cout << "Please enter a year: " << endl;
+    cin >> year;
+    return year;
+}
+
+string FindMonthAsString(int monthNum)
+{
+    string monthString;
+    switch(monthNum)
+    {
+    case 1:
+        monthString = "January";
+        break;
+    case 2:
+        monthString = "February";
+        break;
+    case 3:
+        monthString = "March";
+        break;
+    case 4:
+        monthString = "April";
+        break;
+    case 5:
+        monthString = "May";
+        break;
+    case 6:
+        monthString = "June";
+        break;
+    case 7:
+        monthString = "July";
+        break;
+    case 8:
+        monthString = "August";
+        break;
+    case 9:
+        monthString = "September";
+        break;
+    case 10:
+        monthString = "October";
+        break;
+    case 11:
+        monthString = "November";
+        break;
+    case 12:
+        monthString = "December";
+        break;
+    default:
+        monthString = "Error";
+        break;
+    }
+    return monthString;
+}
+
+void Menu1()
+{
+    int year = GetYearChoice();
+    int month = GetMonthChoice();
+
+
+}
+
+

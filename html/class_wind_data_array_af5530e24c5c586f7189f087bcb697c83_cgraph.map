@@ -1,0 +1,10 @@
+<map id="WindDataArray::CalculateSolarRadTotal" name="WindDataArray::CalculateSolarRadTotal">
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,177,166"/>
+<area shape="rect" id="node2" href="$class_vector.html#a5c85bf16e25d19dad6d685b82d0ccc57" title=" " alt="" coords="265,5,347,32"/>
+<area shape="rect" id="node3" href="$class_wind_data.html#ab090758d7f76684bf460c7321057bf1e" title=" " alt="" coords="239,56,373,83"/>
+<area shape="rect" id="node4" href="$class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7" title=" " alt="" coords="249,107,363,133"/>
+<area shape="rect" id="node5" href="$class_wind_data.html#a3fedda9759c3fd5142d945c5abe1909f" title=" " alt="" coords="225,157,387,184"/>
+<area shape="rect" id="node6" href="$class_date.html#ad79ce504482f317ddcfdc4ecad77671f" title=" " alt="" coords="253,208,359,235"/>
+<area shape="rect" id="node7" href="$class_wind_data_array.html#a70c5e7220cd74b60db195b6aaba52b08" title=" " alt="" coords="234,259,378,285"/>
+<area shape="rect" id="node8" href="$class_vector.html#a8fe0e49a7ffed77fd569624338af8750" title=" " alt="" coords="435,259,529,285"/>
+</map>
